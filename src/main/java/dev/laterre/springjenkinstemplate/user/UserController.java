@@ -19,7 +19,7 @@ public class UserController {
     @GetMapping("/user/register")
     public String registerForm(Model model) {
         model.addAttribute("user", new User());
-        return "register-form";
+        return "/register-form";
     }
 
     @PostMapping("/user/reg-view")
