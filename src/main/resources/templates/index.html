@@ -1,89 +1,61 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jenkins Bootcamp</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins Bootcamp</title>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet"
-              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <style>
-            body {
-                min-height: 100vh;
-                background: #212529;
-            }
+    <style>
+        body {
+            min-height: 100vh;
+            background: #212529;
+        }
 
-            .input-form {
-                max-width: 680px;
+        .input-form {
+            max-width: 680px;
 
-                margin-top: 80px;
-                padding: 32px;
+            margin-top: 80px;
+            padding: 32px;
 
-                background: #fff;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
-                border-radius: 10px;
-                -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-                -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-                box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
-            }
+            background: #fff;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
+        }
 
-            .btn-block {
-                background: #6E2CF3;
-            }
+        .btn-block {
+            background: #6E2CF3;
+        }
 
-            .form-control {
-                background: #eee;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="input-form-backgroud row">
-                <div class="input-form col-md-12 mx-auto">
-                    <h4 class="mb-3">회원가입</h4>
-                    <form class="validation-form" novalidate>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="name">이름</label>
-                                <input type="text" class="form-control" id="name" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                    이름을 입력해주세요.
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="nickname">별명</label>
-                                <input type="text" class="form-control" id="nickname" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                    별명을 입력해주세요.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="email">이메일</label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-                            <div class="invalid-feedback">
-                                이메일을 입력해주세요.
-                            </div>
-                        </div>
-                        <hr class="mb-4">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="aggrement" required>
-                            <label class="custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
-                        </div>
-                        <div class="mb-4"></div>
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">가입 완료</button>
-                    </form>
-                </div>
+        .form-control {
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="input-form-backgroud row">
+        <div class="input-form col-md-12 mx-auto">
+            <h4 class="mb-3">Jenkins Bootcamp</h4>
+            <div class="alert alert-primary" role="alert">
+                <b>환영합니다!</b> 이 페이지가 보이신다면 젠킨스 자동배포에 성공하신 겁니다.
+                <br>
+                제가 간단한 회원가입 기능을 구현했습니다, 정상적으로 작동하는지 테스트해 보세요!
             </div>
-            <footer class="my-3 text-center text-small">
-                <p class="mb-1">&copy; 2023 Laterre.dev</p>
-            </footer>
+            <div class="mb3">
+                <a href="/user/register" class="btn btn-primary btn-lg btn-block" role="button">회원가입 테스트</a>
+            </div>
         </div>
-    </body>
+    </div>
+</div>
+</body>
 </html>
