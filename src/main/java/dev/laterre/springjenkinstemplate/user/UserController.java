@@ -5,8 +5,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class UserController {
@@ -16,13 +14,13 @@ public class UserController {
         return "index";
     }
 
-    @GetMapping("user/register")
+    @GetMapping("/user/register")
     public String registerForm(Model model) {
         model.addAttribute("user", new User());
         return "register-form";
     }
 
-    @PostMapping("user/reg-view")
+    @PostMapping("/user/reg-view")
     public String viewForm(@ModelAttribute("user") User user) {
         return "register-view";
     }
