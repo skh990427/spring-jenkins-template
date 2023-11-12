@@ -37,3 +37,9 @@ tasks.named('bootBuildImage') {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+bootJar{
+	archivesBaseName = 'laterre-test-sjta'
+	archiveFileName = 'laterre-test-sjta-1.0.0-SNAPSHOT.jar'
+	archiveVersion = "1.0.0"
+}
