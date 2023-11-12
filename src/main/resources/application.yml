@@ -2,3 +2,5 @@
 # 각 동기님 별로 할당된 포트를 사용해주세요
 server:
   port: 8090
+  servlet:
+    contextPath: /laterre
