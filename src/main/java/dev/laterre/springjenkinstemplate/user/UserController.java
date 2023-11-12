@@ -16,13 +16,13 @@ public class UserController {
         return "index";
     }
 
-    @GetMapping("/user/register")
+    @GetMapping("user/register")
     public String registerForm(Model model) {
         model.addAttribute("user", new User());
-        return "/register-form";
+        return "register-form";
     }
 
-    @PostMapping("/user/reg-view")
+    @PostMapping("user/reg-view")
     public String viewForm(@ModelAttribute("user") User user) {
         return "register-view";
     }
